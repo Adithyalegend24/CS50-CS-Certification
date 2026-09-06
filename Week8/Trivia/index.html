@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia!</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+
+        <!-- Multiple Choice Section -->
+        <section class="section">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+
+            <h3>Who is father of India?</h3>
+
+            <p id="mc-result"></p>
+
+            <button class="wrong-option">Subhash Chandra Bose</button>
+            <button class="wrong-option">Jawaharlal Nehru</button>
+            <button class="wrong-option">Bhagat Singh</button>
+            <button class="wrong-option">Vallabhbhai Patel</button>
+            <button id="right-option">Mahatma Gandhi</button>
+        </section>
+
+        <!-- Free Response Section -->
+        <section class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+
+            <h3>Which is the largest continent?</h3>
+
+            <p id="fr-result"></p>
+
+            <form id="answer-form">
+                <input type="text" id="continent-answer" autocomplete="off">
+                <button type="submit">Check Answer</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script>
+
+        // ---------- Multiple Choice ----------
+
+        const correctButton = document.querySelector("#right-option");
+        const wrongButtons = document.querySelectorAll(".wrong-option");
+        const mcMessage = document.querySelector("#mc-result");
+
+        correctButton.addEventListener("click", function () {
+            this.style.backgroundColor = "green";
+            mcMessage.textContent = "Correct!";
+        });
+
+        wrongButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+                this.style.backgroundColor = "red";
+                mcMessage.textContent = "Incorrect!";
+            });
+
+        });
+
+
+
+        // ---------- Free Response ----------
+
+        const form = document.querySelector("#answer-form");
+
+        form.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const answerBox = document.querySelector("#continent-answer");
+            const frMessage = document.querySelector("#fr-result");
+
+            if (answerBox.value.trim().toLowerCase() === "asia") {
+                answerBox.style.backgroundColor = "green";
+                frMessage.textContent = "Correct!";
+            }
+            else {
+                answerBox.style.backgroundColor = "red";
+                frMessage.textContent = "Incorrect!";
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
