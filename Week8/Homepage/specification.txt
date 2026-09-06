@@ -1,0 +1,36 @@
+HTML Tags (10 distinct tags besides html, head, body, and title):
+1. nav - Responsive navigation bar on every page linking to all other pages
+2. a - Hyperlinks in the navbar, footer, cards, and contact section
+3. header - Page titles and hero section on the home page
+4. h1 - Main heading on each page
+5. h2 - Section headings throughout the site
+6. p - Paragraphs of text content
+7. ul / li - Unordered lists for skills and navigation items
+8. ol / li - Ordered list of favorite activities on the hobbies page
+9. table / tr / th / td - Learning progress table on the home page
+10. img - Profile placeholder image on the about page
+11. button - Interactive buttons for greeting, fun facts, and form submission
+12. form / input / textarea / label - Contact form on the contact page
+13. section - Content sections grouping related material
+14. footer - Site footer with copyright and links on every page
+15. strong / em - Emphasis within paragraph text
+16. blockquote - Styled quote on the hobbies page
+17. address - Contact information on the contact page
+CSS Selectors (5 distinct selectors):
+1. body (tag selector) - Sets base font, color, background, and margin
+2. .navbar-custom (class selector) - Styles the dark navigation bar
+3. #hero (ID selector) - Styles the hero banner on the home page
+4. .section-title (class selector) - Styles section headings with underline accent
+5. footer (tag selector) - Styles the site footer background and text color
+CSS Properties (5 distinct properties):
+1. font-size - Controls text size in body, headings, and hero section
+2. color - Sets text colors throughout the site
+3. background-color - Applied to body, navbar, hero gradient areas, footer, and carousel slides
+4. margin - Spacing on body and hero heading
+5. padding - Spacing inside navbar, hero, footer, and blockquote
+6. border-radius - Rounded corners on cards, carousel, and profile image
+7. line-height - Readable paragraph spacing in body text
+JavaScript:
+JavaScript adds interactivity via a time-based greeting alert on the home page, a random fun-fact generator on the hobbies page, and client-side form validation with a success message on the contact page.
+Bootstrap:
+Bootstrap provides the responsive navbar with collapsible mobile menu, card grid layout, carousel on the hobbies page, accordion FAQ on the about page, form styling, table styling, and utility classes for spacing and layout.

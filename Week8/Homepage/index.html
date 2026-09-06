@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aditya Sharma | Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Aditya Sharma</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="hero" class="text-center">
+            <div class="container">
+                <h1>Hello, I'm <span class="highlight">Aditya Sharma</span></h1>
+                <p class="lead">Student, developer, and lifelong learner building things on the web.</p>
+                <button id="greetBtn" class="btn btn-light btn-lg mt-3" type="button">Say Hello</button>
+            </div>
+        </header>
+        <main class="container my-5">
+            <section class="mb-5">
+                <h2 class="section-title">Welcome to My Homepage</h2>
+                <p>
+                    The internet runs on <strong>HTML</strong>, <em>CSS</em>, and <strong>JavaScript</strong> —
+                    three languages that together make it possible to share ideas, connect with people,
+                    and build interactive experiences. This site is my small corner of the web.
+                </p>
+            </section>
+            <section class="mb-5">
+                <h2 class="section-title">Quick Links</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">About Me</h3>
+                                <p class="card-text">Learn about my background, education, and what drives me.</p>
+                                <a href="about.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">My Hobbies</h3>
+                                <p class="card-text">Photography, coding projects, and exploring new technologies.</p>
+                                <a href="hobbies.html" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Get in Touch</h3>
+                                <p class="card-text">Have a question or want to collaborate? Send me a message.</p>
+                                <a href="contact.html" class="btn btn-primary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Currently Learning</h2>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Goal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>In Progress</td>
+                            <td>Build responsive, accessible sites</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>Ongoing</td>
+                            <td>CS50 &amp; beyond</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Practicing</td>
+                            <td>Interactive front-end apps</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer class="text-center">
+            <div class="container">
+                <p>&copy; 2026 Aditya Sharma. Built with HTML, CSS &amp; JavaScript.</p>
+                <p>
+                    <a href="about.html">About</a> |
+                    <a href="hobbies.html">Hobbies</a> |
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
