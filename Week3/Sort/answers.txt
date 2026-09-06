@@ -1,0 +1,15 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Its performance improves when the input data is already sorted, resulting in a lower execution time than sort3. This behavior is typical of Bubble Sort because it can finish with fewer swaps.
+
+
+
+sort2 uses: Merge Sort
+
+How do you know?: It consistently completes the sorting process faster than the other algorithms, which aligns with the efficient divideandconquer approach used by Merge Sort.
+
+
+
+sort3 uses: Selection Sort
+
+How do you know?: The execution time remains relatively high even for presorted data because Selection Sort still scans the unsorted portion of the array during every pass, regardless of the initial order.
